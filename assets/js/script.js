@@ -1,6 +1,6 @@
 require("bootstrap");
 
-$(document).jquery(function() {
+$(document).ready(function() {
   // First image is hard coded in index.html
   const carouselSlides = [
     {
