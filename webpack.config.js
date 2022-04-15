@@ -11,12 +11,10 @@ module.exports = {
     schedule: './assets/js/schedule.js',
     tickets: './assets/js/tickets.js',
   },
-
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
+    path: `${__dirname}/dist`,
   },
-
   module: {
     rules: [
       {
@@ -41,17 +39,14 @@ module.exports = {
       },
     ],
   },
-
   plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
     }),
-
     new BundleAnalyzerPlugin({
-      analyzerMode: 'static', // the report outputs to an HTML file in the dist folder
+      analyzerMode: 'static',
     }),
-
     new WebpackPwaManifest({
       name: 'Food Event',
       short_name: 'Foodies',
@@ -70,7 +65,6 @@ module.exports = {
       ],
     }),
   ],
-
   mode: 'development',
 
   devServer: {
