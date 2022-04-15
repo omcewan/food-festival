@@ -25,14 +25,14 @@
     "webpack": "^5.72.0",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1",
-    "webpack-pwa-manifest": "^4.3.0"
+    "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "image-webpack-loader": "^8.1.0",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.0",
-    "save": "^1.0.1"
+    "save": "^1.0.1",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }
